@@ -5,13 +5,13 @@
  * This program says the temperature
 */
 
-//variable for the temperature of the microbit
+// variable for the temperature of the microbit
 let temperatureOfMicrobit: number = 0
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function() {
-   input.temperature()
-    basic.showNumber(input.temperature())
+  temperatureOfMicrobit = input.temperature()
+ basic.showNumber(input.temperature())
 })
